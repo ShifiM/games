@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>טבלת תוצאות אחרונות</title>
+    <link href="Css/History.css" rel="stylesheet" />
+    <script src="JS/JavaScript.js"></script>
+    <script>
+        function f() {
+            history();
+            f5();
+        }
+        function f5() {
+            if (!localStorage.j1) {
+                localStorage.setItem('is_update', "true");
+                localStorage.setItem('u1', "");
+                localStorage.setItem('u2', "");
+                localStorage.setItem('u3', "");
+                localStorage.setItem('u4', "");
+                localStorage.setItem('u5', "");
+                localStorage.setItem('j1', "");
+                localStorage.setItem('j2', "");
+                localStorage.setItem('j3', "");
+                localStorage.setItem('j4', "");
+                localStorage.setItem('j5', "");
+                localStorage.setItem('k1', "");
+                localStorage.setItem('k2', "");
+                localStorage.setItem('k3', "");
+                localStorage.setItem('k4', "");
+                localStorage.setItem('k5', "");
+                localStorage.setItem('index1', 1);
+            }
+                var d = new Date();
+                var flagg = true;
+                fm();
+            }
+        var d = new Date();
+        function fm() {
+            d = new Date();
+            if (localStorage.is_update == "true") {
+                localStorage.is_update = "false";
+                if (Number(localStorage.index1) == 1) {
+                    document.getElementById("td1_1").innerHTML = localStorage.level;
+                    document.getElementById("td1_2").innerHTML = localStorage.victory;
+                    document.getElementById("td1_3").innerHTML = localStorage.username;
+                    localStorage.index1 = '2';
+                    localStorage.u1 = localStorage.level;
+                    localStorage.j1 = localStorage.username;
+                    localStorage.k1 = localStorage.victory;
+                }
+                else
+                    if (Number(localStorage.index1) == 2) {
+                        document.getElementById("td1_1").innerHTML = localStorage.level;
+                        document.getElementById("td1_2").innerHTML = localStorage.victory;
+                        document.getElementById("td1_3").innerHTML = localStorage.username;
+                        document.getElementById("td2_1").innerHTML = localStorage.u1;
+                        document.getElementById("td2_3").innerHTML = localStorage.j1;
+                        document.getElementById("td2_2").innerHTML = localStorage.k1;
+                        localStorage.u2 = localStorage.u1;
+                        localStorage.j2 = localStorage.j1;
+                        localStorage.k2 = localStorage.k1;
+                        localStorage.j1 = localStorage.level;
+                        localStorage.j1 = localStorage.username;
+                        localStorage.k1 = localStorage.victory;
+                        localStorage.index1 = '3';
+                    }
+                    else
+                        if (Number(localStorage.index1) == 3) {
+                            document.getElementById("td1_1").innerHTML = localStorage.level;
+                            document.getElementById("td1_2").innerHTML = localStorage.victory;
+                            document.getElementById("td1_3").innerHTML = localStorage.username;
+                            document.getElementById("td2_1").innerHTML = localStorage.u2;
+                            document.getElementById("td2_3").innerHTML = localStorage.j2;
+                            document.getElementById("td2_2").innerHTML = localStorage.k2;
+                            document.getElementById("td3_1").innerHTML = localStorage.u1;
+                            document.getElementById("td3_3").innerHTML = localStorage.j1;
+                            document.getElementById("td3_2").innerHTML = localStorage.k1;
+                            localStorage.u3 = localStorage.u2;
+                            localStorage.j3 = localStorage.j2;
+                            localStorage.k3 = localStorage.k2;
+                            localStorage.u2 = localStorage.u1;
+                            localStorage.j2 = localStorage.j1;
+                            localStorage.k2 = localStorage.k1;
+                            localStorage.u1 = localStorage.level;
+                            localStorage.j1 = localStorage.username;
+                            localStorage.k1 = localStorage.victory;
+                            localStorage.index1 = '4';
+                        }
+                        else
+                            if (Number(localStorage.index1) == 4) {
+                                document.getElementById("td1_1").innerHTML = localStorage.level;
+                                document.getElementById("td1_2").innerHTML = localStorage.victory;
+                                document.getElementById("td1_3").innerHTML = localStorage.username;
+                                document.getElementById("td2_1").innerHTML = localStorage.u3;
+                                document.getElementById("td2_3").innerHTML = localStorage.j3;
+                                document.getElementById("td2_2").innerHTML = localStorage.k3;
+                                document.getElementById("td3_1").innerHTML = localStorage.u2;
+                                document.getElementById("td3_3").innerHTML = localStorage.j2;
+                                document.getElementById("td3_2").innerHTML = localStorage.k2;
+                                document.getElementById("td4_1").innerHTML = localStorage.u1;
+                                document.getElementById("td4_3").innerHTML = localStorage.j1;
+                                document.getElementById("td4_2").innerHTML = localStorage.k1;
+                                localStorage.u4 = localStorage.u3;
+                                localStorage.j4 = localStorage.j3;
+                                localStorage.k4 = localStorage.k3;
+                                localStorage.u3 = localStorage.u2;
+                                localStorage.j3 = localStorage.j2;
+                                localStorage.k3 = localStorage.k2;
+                                localStorage.u2 = localStorage.u1;
+                                localStorage.j2 = localStorage.j1;
+                                localStorage.k2 = localStorage.k1;
+                                localStorage.u1 = localStorage.level;
+                                localStorage.j1 = localStorage.username;
+                                localStorage.k1 = localStorage.victory;
+                                localStorage.index1 = '5';
+                            }
+                            else
+                                if (Number(localStorage.index1) == 5) {
+                                    document.getElementById("td1_1").innerHTML = localStorage.level;
+                                    document.getElementById("td1_2").innerHTML = localStorage.victory;
+                                    document.getElementById("td1_3").innerHTML = localStorage.username;
+                                    document.getElementById("td2_1").innerHTML = localStorage.u4;
+                                    document.getElementById("td2_3").innerHTML = localStorage.j4;
+                                    document.getElementById("td2_2").innerHTML = localStorage.k4;
+                                    document.getElementById("td3_1").innerHTML = localStorage.u3;
+                                    document.getElementById("td3_3").innerHTML = localStorage.j3;
+                                    document.getElementById("td3_2").innerHTML = localStorage.k3;
+                                    document.getElementById("td4_1").innerHTML = localStorage.u2;
+                                    document.getElementById("td4_3").innerHTML = localStorage.j2;
+                                    document.getElementById("td4_2").innerHTML = localStorage.k2;
+                                    document.getElementById("td5_1").innerHTML = localStorage.u1;
+                                    document.getElementById("td5_3").innerHTML = localStorage.j1;
+                                    document.getElementById("td5_2").innerHTML = localStorage.k1;
+                                    localStorage.index1 = '1';
+                                }
+            }
+            else {
+                localStorage.is_update = "true";
+                localStorage.index1 = (Number(localStorage.index1)-1);
+                fm();
+            }
+        }
+    </script>
+</head>
+<body onload="f()">
+    <div id="history_div">
+        <h1>Results history </h1>
+        <table id="history" align="center"></table>
+        <button class="buttons" onclick="window.open('game.html','_self')">חזור לשחק</button>
+    </div>
+    <audio controls autoplay style="opacity:0">
+        <source src="Items/%e2%80%8f%e2%80%8fbensound-ukulele%20-%20%d7%a2%d7%95%d7%aa%d7%a7.mp3" type="audio/mpeg" />
+    </audio>
+</body>
+</html>

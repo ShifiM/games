@@ -1,0 +1,186 @@
+﻿body {
+    text-align: center;
+    background-color: black;
+    border-style: solid;
+    border-width: 2vw;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.number {
+    margin-bottom: 3vh;
+    margin-left: 4vw;
+    width: 10vw;
+    height: 10vh;
+    font-size: 10vw;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.number1 {
+    margin-bottom: 3vh;
+    margin-left: 4vw;
+    width: 10vw;
+    height: 10vh;
+    font-size: 10vw;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.number2 {
+    margin-top: -70vh;
+    margin-bottom: 60vh;
+    margin-left: 76vw;
+    width: 10vw;
+    height: 10vh;
+    font-size: 10vw;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+form {
+    color: azure;
+    margin-left: 20vw;
+    margin-top: -50vh;
+    width: 50vw;
+    height: 20vh;
+    border-style: solid;
+    border-width: 2vw;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes border {
+    0% {
+        border-color: red;
+    }
+
+    25% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: blue;
+    }
+
+    85% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+.input {
+
+    margin-top: 5vh;
+    margin-left: 18vw;
+    width: 10vw;
+    height: 3vh;
+}
+.button {
+    margin-top:3vh;
+    display: inline-block;
+    margin:auto;
+    width: 10vw;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-left:2vw;
+    height: 8vh;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.levels {
+    margin-top: 3vh;
+    display: inline;
+    margin: auto;
+    width: 0vw;
+    opacity:0;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-right: 2vw;
+    height: 0vh;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#level3,#level2,#level1{
+    margin-top:4vh;
+}
+
+#buttons {
+    margin:auto;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    color:aqua;
+    font-size:80px;
+    width: 50vw;
+    height: 20vh;
+    border-style: solid;
+    border-width: 2vw;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#instraction{
+    margin-top:5vh;
+    height:10vh;
+    width:13vw;
+}
+#game_start {
+    height: 10vh;
+    width:13vw;
+}
+h1 {
+    margin-top:0vh; 
+    font-size:12vh;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes font {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    85% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}

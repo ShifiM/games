@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>home page</title>
+    <link href="Css/homepage.css" rel="stylesheet" />
+    <script src="JS/JavaScript.js"></script>
+    
+</head>
+<body>
+    <div id="main_div">
+        <h1>multi - game</h1>
+        <div id="a" class="number"><i>1</i></div>
+        <div id="b" class="number">3</div>
+        <div id="c" class="number">6</div>
+        <div id="d" class="number"><i>7</i></div>
+        <div id="form">
+            <form>
+                <div class="input"><input type="text" dir="rtl" id="name" onblur="localStorage1()" /><label>שם משתמש</label></div>
+                <div class="input"><input type="password" id="pass" dir="rtl" onblur="chek_password()" /><label>סיסמא</label></div>
+            </form>
+        </div>
+        <div id="buttons">
+            <button class="button" id="instraction" onclick="window.open('instractions.html','_self')">הוראות המשחק</button>
+            <button class="button" id="game_start" onclick="levels()">התחל משחק</button>
+            
+        </div>
+        <div class="number2">
+            <div id="e" class="number1">8</div>
+            <div id="f" class="number1"><i>4</i></div>
+            <div id="g" class="number1">9</div>
+            <div id="h" class="number1"><i>2</i></div>
+        </div>
+    </div>
+    <audio controls autoplay style="opacity:0">
+        <source src="Items/%e2%80%8f%e2%80%8fbensound-ukulele%20-%20%d7%a2%d7%95%d7%aa%d7%a7.mp3" type="audio/mpeg" />
+    </audio>
+
+</body>
+</html>

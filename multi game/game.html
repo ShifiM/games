@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>game</title>
+    <link href="Css/Style1.css" rel="stylesheet" />
+    <script src="JS/JavaScript.js"></script>
+</head>
+<body onload="new_game1()" onclose="fm()" id="b">
+
+    <div id="error" class="err1">error</div>
+    <div id="win_less" class="swin">
+        <div id="warp">
+            <button onclick="how_many_lifes1()" id="start_game" class="button">לדף הבית</button>
+            <button onclick="finish()" id="play_again" class="button">שחק שוב</button>
+            <button onclick="how_many_lifes()" id="but1" class="button">הוראות</button>
+            <button onclick="ret_from_history()" id="but2" class="button">תוצאות אחרונות</button>
+            <div id="artical">
+                <div id="show_the_targil"></div>
+            </div>
+            <div id="tools">
+                <div id="life"></div>
+                <div id="timmer"></div>
+            </div>
+            <div id="mavchena" class="mavchena">
+                <div id="mark1" class="mark">100% complited</div>
+                <div id="mark2" class="mark">80% complited</div>
+                <div id="mark3" class="mark">60% complited</div>
+                <div id="mark4" class="mark">40% complited</div>
+                <div id="mark5" class="mark">20% complited</div>
+            </div>
+
+        </div>
+        <div class="all_ans" id="all_ans">
+            <div id="1" onclick="check_the_ans1()" class="ans1"></div>
+            <div id="2" onclick="check_the_ans2()" class="ans2"></div>
+            <div id="3" onclick="check_the_ans3()" class="ans3"></div>
+            <br />
+            <br />
+            <div id="4" onclick="check_the_ans4()" class="ans4"></div>
+            <div id="5" onclick="check_the_ans5()" class="ans5"></div>
+            <div id="6" onclick="check_the_ans6()" class="ans6"></div>
+           
+        </div>
+   
+
+    </div>
+    <audio controls autoplay style="opacity:0">
+        <source src="Items/%e2%80%8f%e2%80%8fbensound-ukulele%20-%20%d7%a2%d7%95%d7%aa%d7%a7.mp3" type="audio/mpeg" />
+    </audio>
+    
+</body>
+</html>

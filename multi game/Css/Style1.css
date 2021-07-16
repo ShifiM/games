@@ -1,0 +1,586 @@
+﻿body {
+    background-color:black;
+    /*background-image: url('סופייי.jpg');
+    background-repeat: no-repeat;*/
+}
+#timmer {
+    margin-top: 0vh;
+    font-size: 50px;
+    margin-left: 0vw;
+    width: 5vw;
+    /*border-style: solid;
+    border-color: aquamarine;*/
+    height: 5vh;
+    display: inline-block;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#tools {
+    
+    width: 20vw;
+    height: 10vh;
+    margin-top: -30vh;
+    margin-left: 75vw;
+    
+}
+#life {
+    margin-top: 0vh;
+    margin-left: 0vw;
+    font-size: 50px;
+    width: 5vw;
+    height: 5vh;
+    display: inline-block;
+    /*border-style: solid;
+    border-color: aquamarine;*/
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#artical {
+    width: 300px;
+    height:250px;
+    margin-top:-73vh;
+    margin-left: 39vw;
+    
+}
+@keyframes font {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    85% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+#start_game {
+    margin-left: 82vw;
+    margin-top: 18vh;
+}
+#but1 {
+    margin-left: 82vw;
+    margin-top: 5vh;
+}
+#but2 {
+    margin-left: 82vw;
+    margin-top: 5vh;
+}
+
+.button {
+    width: 250px;
+    border-radius: 50px;
+    font-size: 40px;
+    height: 100px;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#play_again {
+    margin-left: 82vw;
+    margin-top: 5vh;
+}
+#show_the_targil {
+    width: 250px;
+    border-radius: 50px;
+    font-size: 100px;
+    height: 60px;
+    border-style: solid;
+    text-align: center;
+    border-color: black;
+
+    animation-name: font;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#check {
+    width: 250px;
+    border-radius: 50px;
+    font-size: 40px;
+    color: crimson;
+    height: 60px;
+}
+#warp {
+    width: 100px;
+    height: 100px;
+}
+
+.winner {
+    
+    color: crimson;
+    font-size: 500px;
+    text-align: center;
+    opacity: 100;
+    
+}
+audio{
+    
+    margin-bottom:5px;
+}
+.err1{
+    opacity:0;
+}
+.err{
+    opacity:100;
+    font-size:400px;
+    color:aqua;
+}
+.ans1 {
+    margin-top: 1vh;
+    margin-left: 2vw;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 80px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    animation-name: answer1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes answer1 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 500px;
+        top: 80px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        bottom: 0px;
+    }
+
+    85% {
+        background-color: green;
+        left: 15px;
+        top: 5px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+.ans2 {
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 80px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    animation-name: answer2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes answer2 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        top: 400px;
+        left: -150px;
+    }
+
+    50% {
+        background-color: blue;
+        top: 300px;
+        left: -50px;
+    }
+
+    85% {
+        background-color: green;
+        top: 30px;
+        left: -150px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+.ans3 {
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 80px;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    text-align: center;
+    position: relative;
+    animation-name: answer3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes answer3 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 690px;
+        top: 300px;
+    }
+
+    50% {
+        background-color: blue;
+        left: -270px;
+        top: 250px;
+    }
+
+    85% {
+        background-color: green;
+        left: -100px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+.ans4 {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 80px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: red;
+    position: relative;
+    animation-name: answer4;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes answer4 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 600px;
+        top: 200px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 930px;
+        top: -40px;
+    }
+
+    85% {
+        background-color: green;
+        right: -100px;
+        top: 100px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+.ans5 {
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 80px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: red;
+    position: relative;
+    animation-name: answer5;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes answer5 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 800px;
+        top: -80px;
+    }
+
+    50% {
+        background-color: blue;
+        top: -80px;
+        right: 1000px;
+    }
+
+    85% {
+        background-color: green;
+        left: 500px;
+        top: 100px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+.ans6 {
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 80px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: red;
+    position: relative;
+    animation-name: answer6;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes answer6 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: -250px;
+        top: -150px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 690px;
+        top: 200px;
+    }
+
+    85% {
+        background-color: green;
+        left: 600px;
+        top: -150px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: -150px;
+    }
+}
+.wait {
+   
+    text-align: center;
+    margin: auto;
+    color: aqua;
+    font-size: 100px;
+    display: inline-block;
+    width: 65vw;
+    height: 60vh;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    margin-bottom: 30vh;
+}
+.game_over {
+    text-align:center;
+    margin:auto;
+    color:aqua;
+    font-size:100px;
+    display: inline-block;
+    width: 65vw;
+    height: 60vh;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    margin-bottom: 30vh;
+}
+.all_ans {
+    display: inline-block;
+    width: 65vw;
+    height: 60vh;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    margin-bottom: 30vh;
+}
+.full_successes {
+    background-image: url('4A5 (1).gif');
+}
+.half_successes {
+    background-color:black;
+}
+.mavchena {
+    display:block;
+    margin-top: 6.5vh;
+    margin-left: 3vw;
+    width: 10vw;
+    height: 61vh;
+    background-color: black;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-style: solid;
+    border-width:8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes border {
+    0% {
+        border-color: red;
+     
+    }
+
+    25% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: blue;
+    }
+
+    85% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+.mark {
+    width: 9.5vw;
+    height: 12vh;
+    display: block;
+    opacity: 0;
+    border-style: solid;
+    font-size: xx-large;
+    text-align: center;
+    animation-name: background;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#mark5 {
+    
+    width: 9.5vw;
+    height: 9.5vh;
+    border-style: solid;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    opacity: 0;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+@keyframes background {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    85% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+}

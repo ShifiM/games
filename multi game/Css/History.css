@@ -1,0 +1,135 @@
+﻿body {
+    background-color: black;
+    text-align: center;
+}
+
+#history {
+    margin-top: 0vh;
+    margin-left: 30vw;
+    border-width: 2vh;
+}
+
+@keyframes border {
+    0% {
+        border-color: red;
+    }
+
+    25% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: blue;
+    }
+
+    85% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+
+h1 {
+    color: red;
+    font-size: 120px;
+    font-style: italic;
+    animation-name: font;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes font {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    85% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+td, th {
+    color: aqua;
+    font-size: 30px;
+    background-color: black;
+    width: 200px;
+    height: 85px;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*
+#history_div {
+    animation-name: background;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}*/
+
+@keyframes background {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 500px;
+        top: 80px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        bottom: 0px;
+    }
+
+    85% {
+        background-color: green;
+        left: 15px;
+        top: 5px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+.buttons {
+    width: 250px;
+    border-radius: 50px;
+    font-size: 40px;
+    height: 100px;
+    border-style: solid;
+    border-width: 8px;
+    animation-name: border;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
